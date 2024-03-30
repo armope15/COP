@@ -1,0 +1,68 @@
+/* styles.css */
+
+
+/* Estilos para los div normales */
+.normal-div {
+    border: 1px solid #fff; /* Borde gris más claro de 1px */
+    padding: 0;
+
+    /* Otros estilos que desees aplicar */
+}
+
+
+code, pre{
+    margin: 0;
+    padding: 0;
+    border:0;
+}
+
+div > div > div{
+    margin-left: 25px;
+}
+.normal-div:hover{
+    border: 1px solid #999;
+    
+}
+
+.selected:hover,
+.selected {
+    border: 2px solid #555; /* Borde gris medio de 1px */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25); /* Sombra gris de 10px */
+    /* Otros estilos que desees aplicar */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Establece la altura del body al 100% de la ventana */
+    margin: 0;
+    overflow: hidden;
+}
+
+#editor-container {
+    
+    padding: 20px;
+    /* Otros estilos que desees aplicar */
+    flex: 8; /* Ocupa el 80% del espacio disponible */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los elementos en la parte superior del contenedor */
+    overflow-y: auto; /* Habilita el scroll vertical si el contenido excede el tamaño */
+    height: 100%; /* Ocupa el 100% de la altura del body */
+}
+
+#help-bar {
+    border: 1px solid #ddd; /* Borde gris más claro de 1px */
+    /* Otros estilos que desees aplicar */
+    flex: 2; /* Ocupa el 20% del espacio disponible */
+    overflow-y: auto; /* Habilita el scroll vertical si el contenido excede el tamaño */
+    height: 100%; /* Ocupa el 100% de la altura del body */
+}
+
+.hide {
+    display: none;
+  }
+  
+  .show {
+    display: block;
+  }

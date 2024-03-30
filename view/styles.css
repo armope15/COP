@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#editor {
+    display: flex;
+    justify-content: space-between;
+}
+
+#markdown-content, #html-preview {
+    width: 45%;
+    height: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#save-button {
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* Ocultar el elemento cuando la anchura de la pantalla sea igual o inferior a 768px,
+       lo que es comúnmente usado para dispositivos móviles como teléfonos y tablets */
+    .markdown-content {
+      display: none;
+    }
+  }
